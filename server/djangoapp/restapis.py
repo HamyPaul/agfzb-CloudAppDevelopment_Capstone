@@ -118,8 +118,8 @@ def get_dealer_reviews_from_cf(url, **kwargs):
 def analyze_review_sentiments(dealer_review):
 # - Call get_request() with specified arguments
 # - Get the returned sentiment label such as Positive or Negative
-    apikey = ""
-    url = ""
+    apikey = "IJZH7ZTt6jbOEuLiEv09NPC-G35hUxglVehhcNe2nwDo"
+    url = "https://d0484e83-1e1b-4fe8-9025-9799f386c7e0-bluemix.cloudantnosqldb.appdomain.cloud"
     
     authenticator = IAMAuthenticator(apikey)
     natural_language_understanding = NaturalLanguageUnderstandingV1(
