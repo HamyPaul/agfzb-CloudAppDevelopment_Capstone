@@ -22,20 +22,11 @@ class CarModel(models.Model):
 
     SEDAN = "Sedan"
     SUV = "SUV"
-    WAGON = "Wagon"
+    MINISUV="MINISUV"
     SPORT = "Sport"
-    COUPE = "Coupe"
-    MINIVAN = "Mini"
-    VAN = "Van"
-    PICKUP = "Pickup"
-    TRUCK = "Truck"
-    BIKE = "Bike"
-    SCOOTER = "Scooter"
     OTHER = "Other"
-    CAR_CHOICES = [(SEDAN, "Sedan"), (SUV, "SUV"), (WAGON, "Station wagon"), (SPORT, "Sports Car"),
-                   (COUPE, "Coupe"), (MINIVAN, "Mini van"), (VAN,
-                                                             "Van"), (PICKUP, "Pick-up truck"),
-                   (TRUCK, "Truck"), (BIKE, "Motor bike"), (SCOOTER, "Scooter"), (OTHER, 'Other')]
+    CAR_CHOICES = [(SEDAN, "Sedan"), (SUV, "SUV"), (MINISUV, "MINISUV"), (SPORT, "Sports Car"),
+                (OTHER, 'Other')]
     model_type = models.CharField(
         null=False, max_length=15, choices=CAR_CHOICES, default=SEDAN)
 
